@@ -47,14 +47,16 @@
       }
 
       body::after {
-        content: "";
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        opacity: 0.16;
-        background: url("../assets/bolas\ de\ disco.jpg") center repeat fixed;
-        filter: blur(0.3px);
-      }
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.16;
+  background-image: url("../assets/bolas-de-disco.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
 
       a {
         text-decoration: none;
@@ -429,6 +431,11 @@
   }
 }
 @media (max-width: 768px) {
+  body,
+  body::before,
+  body::after {
+    background-attachment: scroll !important;
+  }
   .gallery {
     padding: 40px 20px;
     background: url("../assets/Cinta-de-fotos.png") center no-repeat;
