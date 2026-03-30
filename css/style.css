@@ -52,10 +52,10 @@
   inset: 0;
   pointer-events: none;
   opacity: 0.16;
-  background-image: url("../assets/bolas de disco.jpg");
+  background-image: url("../assets/bolas-de-disco.jpg");
   background-position: center;
   background-repeat: repeat;
-  background-size: cover;
+  background-size: 90% cover;
 }
 
       a {
@@ -392,6 +392,11 @@
         }
 
 @media (max-width: 1440px) {
+  body,
+  body::before,
+  body::after {
+    background-attachment: scroll !important;
+  }
   .gallery {
     padding: 50px 60px;
     width: 100%;
@@ -411,6 +416,11 @@
   }
 }
 @media (max-width: 1024px) {
+  body,
+  body::before,
+  body::after {
+    background-attachment: scroll !important;
+  }
   .gallery {
     display: flex;
     padding: 50px 40px;
@@ -454,6 +464,11 @@
   }
 }
 @media (max-width: 560px) {
+  body,
+  body::before,
+  body::after {
+    background-attachment: scroll !important;
+  }
   .section {
     padding-top: 70px;
   }
